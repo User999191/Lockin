@@ -11,7 +11,7 @@ getgenv().ThirdPerson = true
 getgenv().TeamCheck = false
 getgenv().Enabled = true
 getgenv().smoothness = 1.1
-getgenv().cam_smoothness 10
+
  
  
 -- // main script use with silent aim / / -- 
