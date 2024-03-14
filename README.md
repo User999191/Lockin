@@ -17,7 +17,7 @@ local Settings = {
  
 local SelectedPart = "UpperTorso"                              
 local Prediction = true
-local PredictionValue = 0.112319910                            
+local PredictionValue = 0.1923199                          
  
  
     local AnchorCount = 0
@@ -435,13 +435,13 @@ end)
         local split = string.split(pingvalue,'(')	
 local ping = tonumber(split[1])	
 if ping < 245 then	
-getgenv().Prediction = 0.9112	
+getgenv().Prediction = 0.312	
 elseif ping < 215 then	
-getgenv().Prediction = 0.127123	
+getgenv().Prediction = 0.143	
 	elseif ping < 205 then
-getgenv().Prediction = 0.291	
+getgenv().Prediction = 0.191	
 	elseif ping < 190 then
-getgenv().Prediction = 0.2210	
+getgenv().Prediction = 0.220	
 elseif ping < 180 then	
 getgenv().Prediction = 0.143	
 	elseif ping < 170 then
@@ -449,33 +449,33 @@ getgenv().Prediction = 0.152
 	elseif ping < 160 then
 getgenv().Prediction = 0.149	
 	elseif ping < 150 then
-getgenv().Prediction = 0.11210	
+getgenv().Prediction = 0.110	
 elseif ping < 140 then	
-getgenv().Prediction = 0.11398	
+getgenv().Prediction = 0.118	
 elseif ping < 130 then	
-getgenv().Prediction = 0.19169	
+getgenv().Prediction = 0.173	
 elseif ping < 120 then	
-getgenv().Prediction = 0.1920	
+getgenv().Prediction = 0.190	
 elseif ping < 110 then	
-getgenv().Prediction = 0.1243	
+getgenv().Prediction = 0.343	
 elseif ping < 105 then	
-getgenv().Prediction = 0.1273	
+getgenv().Prediction = 0.273	
 elseif ping < 90 then	
-getgenv().Prediction = 0.1101	
+getgenv().Prediction = 0.101	
 elseif ping < 80 then	
-getgenv().Prediction = 0.191828	
+getgenv().Prediction = 0.188	
 elseif ping < 70 then	
 getgenv().Prediction = 0.181	
 elseif ping < 60 then	
 getgenv().Prediction = 0.1400	
 elseif ping < 50 then	
-getgenv().Prediction = 0.1430	
+getgenv().Prediction = 0.122	
 elseif ping < 40 then	
-getgenv().Prediction = 0.14592	
+getgenv().Prediction = 0.134
 elseif ping < 30 then	
-getgenv().Prediction = 0.1192	
+getgenv().Prediction = 0.143
 elseif ping < 20 then	
-getgenv().Prediction = 0.1671	
+getgenv().Prediction = 0.156	
         end	
         end	
 	end 
