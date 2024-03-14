@@ -17,7 +17,7 @@ local Settings = {
  
 local SelectedPart = "UpperTorso"                              
 local Prediction = true
-local PredictionValue = 0.1259910                            
+local PredictionValue = 0.112319910                            
  
  
     local AnchorCount = 0
@@ -167,15 +167,15 @@ local PredictionValue = 0.1259910
             if ping < 130 then
                 PredictionValue = 0.151912
             elseif ping < 125 then
-                PredictionValue = 0.149
+                PredictionValue = 0.1439
             elseif ping < 110 then
-                PredictionValue = 0.146
+                PredictionValue = 0.1416
             elseif ping < 105 then
-                PredictionValue = 0.138
+                PredictionValue = 0.1382
             elseif ping < 90 then
-                PredictionValue = 0.136
+                PredictionValue = 0.1361
             elseif ping < 80 then
-                PredictionValue = 0.134
+                PredictionValue = 0.13491
             elseif ping < 70 then
                 PredictionValue = 0.13231
             elseif ping < 60 then
@@ -435,19 +435,19 @@ end)
         local split = string.split(pingvalue,'(')	
 local ping = tonumber(split[1])	
 if ping < 245 then	
-getgenv().Prediction = 0.91	
+getgenv().Prediction = 0.9112	
 elseif ping < 215 then	
-getgenv().Prediction = 0.1928171223	
+getgenv().Prediction = 0.127123	
 	elseif ping < 205 then
-getgenv().Prediction = 0.23	
+getgenv().Prediction = 0.291	
 	elseif ping < 190 then
 getgenv().Prediction = 0.2210	
 elseif ping < 180 then	
-getgenv().Prediction = 0.112	
+getgenv().Prediction = 0.143	
 	elseif ping < 170 then
 getgenv().Prediction = 0.152	
 	elseif ping < 160 then
-getgenv().Prediction = 0.189	
+getgenv().Prediction = 0.149	
 	elseif ping < 150 then
 getgenv().Prediction = 0.11210	
 elseif ping < 140 then	
@@ -461,7 +461,7 @@ getgenv().Prediction = 0.1243
 elseif ping < 105 then	
 getgenv().Prediction = 0.1273	
 elseif ping < 90 then	
-getgenv().Prediction = 0.110	
+getgenv().Prediction = 0.1101	
 elseif ping < 80 then	
 getgenv().Prediction = 0.191828	
 elseif ping < 70 then	
