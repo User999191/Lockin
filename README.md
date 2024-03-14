@@ -15,9 +15,9 @@ local Settings = {
     }
 }
  
-local SelectedPart = "UpperTorso"                              
+local SelectedPart = "HumanoidRootPart"                              
 local Prediction = true
-local PredictionValue = 0.1923199                          
+local PredictionValue = 0.19231899                          
  
  
     local AnchorCount = 0
@@ -26,7 +26,7 @@ local PredictionValue = 0.1923199
     local CC = game:GetService"Workspace".CurrentCamera
     local Plr;
     local enabled = false
-    local accomidationfactor = 0.12348
+    local accomidationfactor = 0.1234568
     local mouse = game.Players.LocalPlayer:GetMouse()
     local placemarker = Instance.new("Part", game.Workspace)
  
@@ -38,7 +38,7 @@ local PredictionValue = 0.1923199
         e.AlwaysOnTop = Settings.rewrittenmain.DOT
         local a = Instance.new("Frame", e)
         if Settings.rewrittenmain.DOT == true then
-        a.Size = UDim2.new(2, 2, 2)
+        a.Size = UDim2.new(4, 4, 4)
         else
         a.Size = UDim2.new(0, 0, 0, 0)
         end
@@ -292,7 +292,7 @@ local PredictionValue = 0.1923199
  
 --the cam lock
  
-getgenv().Prediction = 0.14305585120958176	
+getgenv().Prediction = 0.1430585058176	
 getgenv().AimPart = "UpperTorso"	
 getgenv().Key = "Q"	
 getgenv().DisableKey = "P"	
@@ -338,7 +338,7 @@ local fov = Drawing.new("Square")
 fov.Filled = false	
 fov.Transparency = 1	
 fov.Thickness = 1	
-fov.Color = Color3.fromRGB(255, 255, 0)	
+fov.Color = Color3.fromRGB(255, 255, 255)	
 fov.NumSides = 1000	
  
 --// Functions	
@@ -435,7 +435,7 @@ end)
         local split = string.split(pingvalue,'(')	
 local ping = tonumber(split[1])	
 if ping < 245 then	
-getgenv().Prediction = 0.312	
+getgenv().Prediction = 0.275	
 elseif ping < 215 then	
 getgenv().Prediction = 0.143	
 	elseif ping < 205 then
@@ -447,19 +447,19 @@ getgenv().Prediction = 0.143
 	elseif ping < 170 then
 getgenv().Prediction = 0.152	
 	elseif ping < 160 then
-getgenv().Prediction = 0.149	
+getgenv().Prediction = 0.167	
 	elseif ping < 150 then
-getgenv().Prediction = 0.110	
+getgenv().Prediction = 0.134	
 elseif ping < 140 then	
-getgenv().Prediction = 0.118	
+getgenv().Prediction = 0.128	
 elseif ping < 130 then	
-getgenv().Prediction = 0.173	
+getgenv().Prediction = 0.145	
 elseif ping < 120 then	
-getgenv().Prediction = 0.190	
+getgenv().Prediction = 0.170	
 elseif ping < 110 then	
-getgenv().Prediction = 0.343	
+getgenv().Prediction = 0.303	
 elseif ping < 105 then	
-getgenv().Prediction = 0.273	
+getgenv().Prediction = 0.173	
 elseif ping < 90 then	
 getgenv().Prediction = 0.101	
 elseif ping < 80 then	
@@ -467,13 +467,13 @@ getgenv().Prediction = 0.188
 elseif ping < 70 then	
 getgenv().Prediction = 0.181	
 elseif ping < 60 then	
-getgenv().Prediction = 0.1400	
+getgenv().Prediction = 0.140	
 elseif ping < 50 then	
-getgenv().Prediction = 0.122	
+getgenv().Prediction = 0.132	
 elseif ping < 40 then	
-getgenv().Prediction = 0.134
+getgenv().Prediction = 0.145
 elseif ping < 30 then	
-getgenv().Prediction = 0.143
+getgenv().Prediction = 0.150
 elseif ping < 20 then	
 getgenv().Prediction = 0.156	
         end	
